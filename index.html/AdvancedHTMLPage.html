@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedric's Webpage</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e7dff, #55c7e6);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 12px 12px 0 0;
+        }
+        .header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 12px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 12px 25px;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .navbar a:hover {
+            background-color: #4aaddf;
+            transform: scale(1.1);
+        }
+
+        
+        .image-section {
+            height: 500px;
+            background-image: url(image1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        .image-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .image-section-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 150px 20px;
+        }
+        .image-section-content h2 {
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .image-section-content p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+
+        
+        .form-section {
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        .form-section h2 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f9f9f9;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #55c7e6;
+            outline: none;
+        }
+        .form-group button {
+            background-color: #55c7e6;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        .form-group button:hover {
+            background-color: #4aaddf;
+        }
+
+        
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 1.2rem;
+            border-radius: 0 0 12px 12px;
+        }
+        .footer span {
+            color: #55c7e6;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Cedric's Webpage</h1>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <div class="image-section-content">
+            <h2>Immerse Yourself in Nature's Beauty</h2>
+            <p>Nature is a beautiful and harmonious balance of life, constantly evolving and changing. The towering trees in the forests, the vastness of the oceans, and the tranquility of the mountains all work together to create an environment full of wonder. Animals, plants, and humans all rely on nature's delicate systems to thrive, each playing a vital role in sustaining the cycle of life. The seasons bring refreshing changes, from the warmth of summer to the chill of winter, each offering unique experiences. Nature's beauty can be found in the smallest flower to the largest waterfall, showing us the true splendor of the world. Taking time to appreciate nature reminds us of the importance of preserving and protecting our planet for future generations.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="form-section">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Created by <span>Cedric Stefan C. Cueva</span>. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

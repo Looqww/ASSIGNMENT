@@ -1,0 +1,138 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6e7dff, #55c7e6);
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.header {
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+    background: #333;
+    border-radius: 8px 8px 0 0;
+}
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+
+.nav-table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-table th, .nav-table td {
+    padding: 15px;
+    text-align: center;
+}
+.nav-table th {
+    background-color: #55c7e6;
+    color: white;
+    font-size: 1.2rem;
+}
+.nav-table td {
+    background-color: #f1f8ff;
+}
+.nav-table tr:hover {
+    background-color: #e3f1ff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.form-section {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-section h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #55c7e6;
+    outline: none;
+}
+.form-group button {
+    background-color: #55c7e6;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-group button:hover {
+    background-color: #4aaddf;
+}
+
+
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 0 0 8px 8px;
+}
+.footer span {
+    color: #55c7e6;
+    font-weight: bold;
+}
+
+
+.highlight {
+    color: #ff4081;
+    font-weight: bold;
+}
+
+
+.header h1 {
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
